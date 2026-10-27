@@ -1,6 +1,6 @@
 {
   "databaseVersion": 14,
-  "revisionNumber": 13,
+  "revisionNumber": 14,
   "platform": {
     "name": "Nintendo 3DS",
     "uniqueId": "n3ds",
@@ -25,6 +25,16 @@
     "extra": ""
   },
   "playerList": [
+    {
+      "name": "Azahar Plus",
+      "uniqueId": "3ds.io.github.azaharplus.android",
+      "description": "Supported extensions: 3ds, app, cci, cxi, zcci, zcxi.",
+      "acceptedFilenameRegex": "^(.*)\\.(?:3ds|app|cci|cxi|zcci|zcxi|cia|3dsx)$",
+      "amStartArguments": "-n io.github.azaharplus.android/org.citra.citra_emu.activities.EmulationActivity\n  -a android.intent.action.VIEW\n  -d {file.uri}\n  --activity-clear-task\n  --activity-clear-top\n",
+      "killPackageProcesses": false,
+      "killPackageProcessesWarning": true,
+      "extra": ""
+    },
     {
       "name": "Azahar",
       "uniqueId": "3ds.azahar",
